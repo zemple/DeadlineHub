@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "chrono-node": "2.10.3",
+    "express": "4.22.3",
+    "google-auth-library": "11.3.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "vite": "6.4.3"
+  },
+  "name": "deadlinehub",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "npm run build && npm start",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test"
+  },
+  "private": true
+}
